@@ -1,22 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-*{
-    margin: opx;
-    padding: opx;
-    box-sizing: border-box;
-}
+    <title>LocalGrow AI | Marketing for small bussiness Recommendation</title>
 
-html,body{
-    width: 100%;
-    heigth: 100%;
-}
+    <link rel="stylesheet" href="STYLE>CSS">
+</head>
 
-.box{
-    wedith: 100%;
-    height: 300%;
-    background-color:
-    burlywood;
-    font-size: 30px;
-    
+<body>
 
-}
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Local<span>Grow</span>
+            <small>AI</small>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#recommendation">Recommendation</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="badge">AI-Powered Local Marketing</span>
+
+            <h1>
+                Grow Your Local
+                <span>Business Smarter</span>
+            </h1>
+
+            <p>
+                Get personalized marketing recommendations based on
+                your business type, location, budget and marketing goals.
+            </p>
+
+            <a href="#recommendation" class="hero-btn">
+                Get Recommendations
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="card-icon">📈</div>
+
+            <h3>Smart Marketing</h3>
+
+            <p>
+                AI-inspired recommendations designed
+                specifically for small businesses.
+            </p>
+
+            <div class="mini-stats">
+                <div>
+                    <strong>95%</strong>
+                    <span>Personalized</span>
+                </div>
+
+                <div>
+                    <strong>4+</strong>
+                    <span>Strategies</span>
+                </div>
+
+                <div>
+                    <strong>24/7</strong>
+                    <span>Available</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECOMMENDATION SECTION -->
+    <section class="recommendation" id="recommendation">
+
+        <div class="section-heading">
+
+            <span>SMART ANALYSIS</span>
+
+            <h2>Tell Us About Your Business</h2>
+
+            <p>
+                Enter a few details and get a customized marketing strategy.
+            </p>
+
+        </div>
+
+
+        <div class="main-container">
+
+            <!-- INPUT FORM -->
+
+            <div class="form-card">
+
+                <h3>Business Information</h3>
+
+                <form id="marketingForm">
+
+                    <div class="input-group">
+
+                        <label>Business Name</label>
+
+                        <input
+                            type="text"
+                            id="businessName"
+                            placeholder="e.g. Sharma Bakery"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Business Type</label>
+
+                        <select id="businessType" required>
+
+                            <option value="">Select business type</option>
+
+                            <option value="restaurant">
+                                Restaurant / Cafe
+                            </option>
+
+                            <option value="retail">
+                                Retail Store
+                            </option>
+
+                            <option value="salon">
+                                Salon / Beauty
+                            </option>
+
+                            <option value="fitness">
+                                Gym / Fitness
+                            </option>
+
+                            <option value="education">
+                                Coaching / Education
+                            </option>
+
+                            <option value="service">
+                                Local Service
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Location</label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="e.g. Meerut"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Monthly Marketing Budget</label>
+
+                        <select id="budget" required>
+
+                            <option value="">Select budget</option>
+
+                            <option value="low">
+                                ₹1,000 - ₹3,000
+                            </option>
+
+                            <option value="medium">
+                                ₹3,000 - ₹10,000
+                            </option>
+
+                            <option value="high">
+                                ₹10,000 - ₹25,000
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Primary Marketing Goal</label>
+
+                        <select id="goal" required>
+
+                            <option value="">Select goal</option>
+
+                            <option value="customers">
+                                Get More Customers
+                            </option>
+
+                            <option value="awareness">
+                                Increase Local Awareness
+                            </option>
+
+                            <option value="sales">
+                                Increase Sales
+                            </option>
+
+                            <option value="online">
+                                Improve Online Presence
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button type="submit" class="generate-btn">
+                        ✨ Generate Recommendation
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="result-card" id="result">
+
+                <div class="empty-result">
+
+                    <div class="result-icon">🤖</div>
+
+                    <h3>Your AI Recommendation</h3>
+
+                    <p>
+                        Enter your business information and click
+                        "Generate Recommendation".
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features" id="about">
+
+        <div class="section-heading">
+
+            <span>WHY LOCALGROW?</span>
+
+            <h2>Marketing Made Simple</h2>
+
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🎯</div>
+
+                <h3>Personalized Strategy</h3>
+
+                <p>
+                    Recommendations are generated according to
+                    your business and marketing goal.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">💰</div>
+
+                <h3>Budget Friendly</h3>
+
+                <p>
+                    Get marketing ideas suitable for your
+                    available budget.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📍</div>
+
+                <h3>Local Focus</h3>
+
+                <p>
+                    Focus on customers around your business location.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📊</div>
+
+                <h3>Actionable Insights</h3>
+
+                <p>
+                    Get practical marketing actions instead of
+                    complicated marketing reports.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>LocalGrow <span>AI</span></h3>
+
+        <p>
+            Smart marketing recommendations for local businesses.
+        </p>
+
+        <p class="copyright">
+            © 2026 LocalGrow AI. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
